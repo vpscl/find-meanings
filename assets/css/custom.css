@@ -11333,22 +11333,39 @@ p {
 }
 
 .logo {
-  width: 40% !important;
+  width: 14rem !important;
   margin-bottom: 1.25rem;
+}
+@media (max-width: 640px) {
+  .logo {
+    width: 12rem !important;
+  }
 }
 
 .wrapper {
+  width: 35rem;
   max-height: 28rem;
+  transition: all 400ms ease !important;
+}
+@media (max-width: 640px) {
+  .wrapper {
+    width: 100%;
+  }
 }
 .wrapper.active .input-group {
   margin-bottom: 2.25rem !important;
 }
 .wrapper.active ul {
-  display: block !important;
+  height: auto;
+  opacity: 1;
+}
+.wrapper.active .no-definition {
+  display: none !important;
 }
 
 .search-icon i,
-.clear-icon i {
+.clear-icon i,
+.audio-icon i {
   transition: 100ms;
 }
 
@@ -11356,15 +11373,23 @@ p {
   cursor: pointer;
 }
 
-.bxs-volume-full {
-  transition: 200ms;
+.audio-icon i {
+  color: white;
 }
-.bxs-volume-full:hover {
+.audio-icon i:hover {
   color: #d62c0b !important;
 }
 
 .search-icon {
   order: -1;
+}
+
+.no-definition {
+  display: none;
+}
+.no-definition i {
+  font-size: 35px;
+  margin-top: 12px;
 }
 
 input {
@@ -11390,10 +11415,13 @@ input:not(:placeholder-shown) ~ .clear-icon i {
 }
 
 ul {
+  height: 0;
+  opacity: 0;
   overflow-y: auto;
+  transition: all 300ms ease !important;
 }
 ul::-webkit-scrollbar {
-  width: 3.5px;
+  width: 0px;
 }
 ul::-webkit-scrollbar-track {
   background: transparent;
@@ -11414,4 +11442,10 @@ li:not(:first-child)::before {
   left: 0;
   border-left: solid 5px #d62c0b;
   height: 75%;
+}
+
+.synonyms span {
+  border-bottom: 1px solid white;
+  line-height: 24px;
+  cursor: pointer;
 }/*# sourceMappingURL=custom.css.map */
