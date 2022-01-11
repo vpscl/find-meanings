@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!------- CSS ------->
+    <link href="css/custom.css" rel="stylesheet" />
+
+    <!------- BOX ICONS ------->
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!------- MAIN JS ------->
+    <script src="js/main.js" defer></script>
+
+    <title>Find Meanings</title>
+    <link rel="icon" type="image/x-icon" href="img/logo.svg" />
+  </head>
+  <body class="vh-100 d-flex justify-content-center align-items-center">
+    <div class="d-flex flex-column justify-content-center align-items-center">
+      <img src="img/logo.png" class="logo" alt="" />
+
+      <div
+        class="wrapper container-fluid p-4 bg-secondary rounded-3 d-flex flex-column justify-content-center align-items-center"
+      >
+        <div class="input-group bg-white rounded-1">
+          <input
+            type="text"
+            class="form-control border-0 shadow-none px-0 py-2 fs-4 fw-bold text-primary bg-transparent"
+            placeholder="Type a word"
+          />
+
+          <span
+            class="input-group-text bg-transparent ps-2 pe-1 border-0 search-icon"
+          >
+            <i class="bx bxs-file-find fs-3 text-light"></i>
+          </span>
+
+          <span
+            class="input-group-text bg-transparent px-2 border-0 clear-icon"
+          >
+            <i class="bx bx-x fs-4 fw-bold text-secondary d-none"></i>
+          </span>
+        </div>
+
+        <small class="text-white mt-4 no-definition"> </small>
+
+        <!-- output -->
+        <ul class="list-group w-100 px-4">
+          <li
+            class="list-group-item bg-transparent text-white border-0 border-white pt-0 px-0"
+          >
+            <div class="row justify-content-between">
+              <div class="col-10 word">
+                <p class="mb-0 fw-bold fs-3 lh-1">-</p>
+                <small class="fw-light fst-italic">-</small>
+              </div>
+              <div
+                class="col-2 d-flex justify-content-end align-items-center audio-icon"
+              >
+                <i class="bx bxs-volume-full btn fs-2 p-0"></i>
+              </div>
+            </div>
+          </li>
+
+          <li
+            class="list-group-item bg-transparent text-white border-0 border-top border-white py-3 ps-3"
+          >
+            <p class="fw-bold fs-5 lh-small mb-0">Meaning</p>
+            <p class="fw-light lh-small mb-2 meaning">-</p>
+          </li>
+
+          <li
+            class="list-group-item bg-transparent text-white border-0 border-top border-white py-3 ps-3"
+          >
+            <p class="fw-bold fs-5 lh-small mb-0">Example</p>
+            <p class="fw-light lh-small mb-2 example">-</p>
+          </li>
+
+          <li
+            class="list-group-item bg-transparent text-white border-0 border-top border-white py-3 ps-3 synonyms"
+          >
+            <p class="fw-bold fs-5 lh-small mb-0">Synonyms</p>
+            <p class="fw-light mb-2 list">-</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
