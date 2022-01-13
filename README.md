@@ -6,12 +6,16 @@
 
 FindMeanings is a dictionary application that aims to present the word's definition, sentence sample, and a pronounciation guide while providing a minimalistic design.
 
-## Dependencies
+## Server-Side Framework
 
-* Server Side: NodeJS, Express.js
-* Client-Side: Bootstrap, EJS
+* NodeJS, Express.js
+
+## Client-Side Framework
+
+* Bootstrap, EJS
 
 ## Web Service
+
 * [Free Dictionary API](https://dictionaryapi.dev/)
 
 ## How to Run
