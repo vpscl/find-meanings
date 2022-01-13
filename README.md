@@ -8,11 +8,13 @@ FindMeanings is a dictionary application that aims to present the word's definit
 
 ## Server-Side Framework
 
-* NodeJS, Express.js
+* NodeJS
+* Express.js
 
 ## Client-Side Framework
 
-* Bootstrap, EJS
+* Bootstrap
+* EJS
 
 ## Web Service
 
