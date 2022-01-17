@@ -4,7 +4,7 @@
 
 ## Overview
 
-FindMeanings is a simple dictionary application that aims to present the word's definition, a sentence sample, and pronounciation guide while providing a minimalistic design.
+FindMeanings is a simple dictionary application that aims to present the word's definition, a sentence sample, and pronunciation guide while providing a minimalistic design.
 
 ## Server-Side Framework
 
